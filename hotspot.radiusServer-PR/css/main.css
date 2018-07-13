@@ -358,3 +358,10 @@ line-height: 1.5;
     background-color: #ececff;
     cursor: pointer;
   }
+  .timePrice {
+    font-family: Poppins-Regular;
+    font-size: 12px;
+    font-weight: 700;
+    color: #999999;
+    line-height: 1.5;
+    }
