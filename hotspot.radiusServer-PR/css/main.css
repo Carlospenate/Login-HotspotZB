@@ -355,7 +355,7 @@ line-height: 1.5;
   }
   
   .row:hover {
-    background-color: #ececff;
+    background-color: rgba(233,84,32,0.2);
     cursor: pointer;
   }
   .timePrice {
