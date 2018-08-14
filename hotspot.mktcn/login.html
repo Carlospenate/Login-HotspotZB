@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+	<title>ZeroByte Internet Prepago</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta http-equiv="expires" content="-1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript">
+
+
+		function changeToUpperCase(t) {
+			var user = document.getElementById(t.id);
+			user.value = user.value.toUpperCase().replace(/ /g, '');
+            console.log(user.value);
+		//	var pwd = document.getElementById('password')
+		//	pwd.value = user.value;
+			
+		}
+
+	</script>
+</head>
+
+<body>
+	<div class="top">
+		$(if chap-id)
+		<form style="display:none" name="sendin" action="$(link-login-only)" method="post">
+			<input type="hidden" name="username" />
+			<input type="hidden" name="password" />
+			<input type="hidden" name="dst" value="$(link-orig)" />
+			<input type="hidden" name="popup" value="true" />
+		</form>
+	</div>
+	<script type="text/javascript" src="/md5.js"></script>
+	<script type="text/javascript">
+< !--
+			function doLogin() {
+				document.sendin.username.value = document.login.username.value;
+				document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+				document.sendin.submit();
+				return false;
+			}
+//-->
+	</script> $(endif)
+
+
+	<div class="loginForm">
+
+			<div class="clean-red">
+				$(if error)
+				<div>$(error)</div>
+				$(endif)
+			</div>
+
+		<form name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()" $(endif)>
+
+			<input type="hidden" name="dst" value="$(link-orig)" />
+			<input type="hidden" name="popup" value="true" />
+
+			<div class="group">
+				<input id="username" name="username" type="text" value="$(username)" autofocus onkeyup="changeToUpperCase(this)" autocomplete="off" />
+				<span class="highlight"></span>
+				<span class="bar"></span>
+				<label>Código de Acceso</label>
+			</div>
+			<div style="display: none" class="group">
+				<input id="password" name="password" type="password" autofocus onkeyup="changeToUpperCase(this)">
+				<span class="highlight"></span>
+				<span class="bar"></span>
+				<label>Contraseña</label>
+			</div>
+			<button class="button buttonBlue" type="submit" <span> Acceder a Internet </span>
+				<div class="ripples buttonRipples">
+					<span class="ripplesCircle"></span>
+				</div>
+			</button>
+
+			<ul class="login-more p-t-190">
+						<li class="m-b-8">
+							<span class="txt1">
+								Soporte Opción 1: 
+							</span>
+
+							<a href="tel:9981142021" class="txt2">
+								998-114-2021
+							</a>
+						</li>
+                       
+						<li>
+							<span class="txt1">
+							Soporte Opción 2:
+						     </span>
+						     <a href="https://api.whatsapp.com/send?phone=+5219841369281" class="txt2">984-136-9281</a>
+						 </li>
+
+						<li>
+							<span class="txt1">
+								Ventas: 
+							</span>
+
+							<a href="tel:9988961916" class="txt2">
+								998-896-1916
+							</a>
+						</li>
+<!--
+							<li class="m-b-8">
+							<span class="txt1">
+								Soporte 7-11am - Ventas 11am-11pm: 
+							</span>
+
+							<a href="tel:9988961916" class="txt2">
+								998-896-1916
+							</a>
+						</li>
+                       
+						<li>
+							<span class="txt1">
+							Soporte 11am-8pm:
+						     </span>
+						     <a href="https://api.whatsapp.com/send?phone=+5219841369281" class="txt2">984-136-9281</a>
+						 </li>
+
+						<li>
+							<span class="txt1">
+								Soporte 8-11pm: 
+							</span>
+
+							<a href="tel:9981142021" class="txt2">
+								998-114-2021
+							</a>
+						</li>
+							-->
+					</ul>
+
+		</form>
+		<!-- Inicio Tabla de precios -->
+		
+		<div class="limiter">
+			<div class="container-table100">
+				<div class="wrap-table100">
+						<div class="table">
+	
+							<div class="row header">
+								<div class="cell">
+									<span>Plan De Acceso</span>
+								</div>
+								<div class="cell">
+									<span>Costo</span>
+								</div>
+	
+							</div>
+	
+							<div class="row">
+								<div class="cell" data-title="Plan">
+									<span class="timePrice">3 Horas</span>
+								</div>
+								<div class="cell" data-title="Costo">
+									<span class="timePrice">$15 Pesos</span>
+								</div>
+	
+							</div>
+	
+							<div class="row">
+								<div class="cell" data-title="Plan">
+									<span class="timePrice">5 Horas</span>
+								</div>
+								<div class="cell" data-title="Costo">
+									<span class="timePrice">$20 Pesos</span>
+								</div>
+	
+							</div>
+	
+							<div class="row">
+								<div class="cell" data-title="Plan">
+									<span class="timePrice">12 Horas</span>
+								</div>
+								<div class="cell" data-title="Costo">
+									<span class="timePrice">$30 Pesos</span>
+								</div>
+	
+							</div>
+	
+							<div class="row">
+								<div class="cell" data-title="Plan">
+									<span class="timePrice">5 Días</span>
+								</div>
+								<div class="cell" data-title="Costo">
+									<span class="timePrice">$75 Pesos</span>
+								</div>
+	
+							</div>
+	
+							<div class="row">
+								<div class="cell" data-title="Plan">
+									<span class="timePrice">15 Días</span>
+								</div>
+								<div class="cell" data-title="Costo">
+									<span class="timePrice">$150 Pesos</span>
+								</div>
+	
+							</div>
+	
+							<div class="row">
+								<div class="cell" data-title="Plan">
+									<span class="timePrice">1 Mes - 2 Dispositivos</span>
+								</div>
+								<div class="cell" data-title="Costo">
+									<span class="timePrice">$250 Pesos</span>
+								</div>
+	
+							</div>
+	
+							<div class="row">
+								<div class="cell" data-title="Plan">
+									<span class="timePrice">1 Mes - 5 Dispositivos</span>
+								</div>
+								<div class="cell" data-title="Costo">
+									<span class="timePrice">$350 Pesos</span>
+								</div>
+	
+							</div>
+	<!--
+							<div class="row">
+								<div class="cell" data-title="Full Name">
+									
+								</div>
+								<div class="cell" data-title="Age">
+									
+								</div>
+					
+							</div>
+	-->
+						</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<img src="img/Logoindex.png" alt="mikrotik" />
+
+			<br />
+			<div style="color: #645c5c; font-size: 10px">&copy; Desarrollado por ZeroByte</div>
+	</div>
+	</footer>
+
+
+	</div>
+
+	<script type="text/javascript">
+			< !--
+			document.login.username.focus();
+		//-->
+
+	</script>
+</body>
+
+</html>
